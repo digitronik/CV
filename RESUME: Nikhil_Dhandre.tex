@@ -1,0 +1,307 @@
+%----------------------------------------------------------------------------------------
+%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,11pt]{memoir} % Font and paper size
+
+\input{structure.tex} % Include the file specifying document layout and packages
+
+
+\userinformation{ % Set the content that goes into the sidebar of each page
+\begin{flushright}
+
+\includegraphics[width=.6\columnwidth]{photo.jpg}\\[\baselineskip] % Your photo
+\small % Smaller font size
+\textbf{Nikhil M. Dhandre} \\ % Your name
+\url{nik.digitronik@live.com} \\ % Your email address
+\url{www.digitronik.in} \\ % Your URL
+\texttt{+91-9096919955} \\ % Your phone number
+\Sep % Some whitespace
+\textbf{Date of Birth} \\
+\texttt{April 04, 1991}\\
+
+% \Sep % Some whitespace
+% \textbf{Address} \\
+% 3642, Shastri Nagar, \\ % Address 1
+% Near Dr. Ambedkar School, \\ % Address 2
+% Armori, \\ % Address 3
+% MH-441208.\\
+
+\Sep % Some whitespace
+\textbf{Address} \\
+\texttt{B-1001, Sarang, \\ % Address 1
+Nanded City, \\ % Address 2
+Pune, \\ % Address 3
+MH-411041.}
+\vfill % Whitespace under this block to push it up under the photo
+\end{flushright}
+}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%    Start Resume building
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\userinformation % Print your information in the left column
+\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%    HEADING
+%----------------------------------------------------------------------------------------
+
+\cvheading{\textsc{Nikhil Dhandre}} % Large heading - your name
+
+% \cvsubheading{Software Engineer} % Subheading - your occupation/specialization
+\Sep
+%----------------------------------------------------------------------------------------
+%    ABOUT ME
+%----------------------------------------------------------------------------------------
+\aboutme{About Me}{Research oriented developer with one year of experience in the area of software and hardware development. 
+Seeking for challenging and creative environment in order to utilise my technical knowledge, educational background for effectively
+contribute to the growth of the organisation.}
+
+\Sep % Extra whitespace after the end of a major section
+%----------------------------------------------------------------------------------------
+%    SKILLS
+%----------------------------------------------------------------------------------------
+
+\CVSection{\textsc{Skill Set}:}
+
+%------------------------------------------------
+\begin{minipage}[t]{0.25\columnwidth}
+\cvsubitem{Languages} \\
+\cvsubitem{Databases} \\
+\cvsubitem{Servers} \\
+\cvsubitem{Operating System}\\
+\cvsubitem{Softwares} \\
+\quad \\
+\cvsubitem{Hardware}\\
+\cvsubitem{Courses}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.75\columnwidth}
+: Python, C, Shell, \LaTeX, HTML, PL/SQL, PHP (\textit{basic})\\
+: MySQL, PostgreSQL, SQLite \\ 
+: LAMP (\textit{Apache}), FTP, Mailing \\
+: Linux (\textit{CentOS, Ubuntu, Jessie, NOOBS}), Windows\\
+: Proteus, Multisim, Matlab, Keil, Arduino IDE, Kile,\\ \phantom{.} %blank space
+Express PCB, Photoshop, Altium (\textit{just start}) etc.\\
+: Raspberry Pi, Arduino, Microcontrollers\\ 
+: CCO, CCC
+\end{minipage}
+% {\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+% \bluebullet Java &  \bluebullet Shell & \bluebullet Python\\
+% \bluebullet C++ &  \bluebullet PHP & \bluebullet Matlab\\
+% \end{tabular}}
+\vspace{.5cm}
+
+%----------------------------------------------------------------------------------------
+%    Publications
+%----------------------------------------------------------------------------------------
+\Sep % Extra whitespace after the end of a major section
+
+\CVSection{\textsc{Organisational Scan}:}
+
+\begin{minipage}[t]{0.25\columnwidth}
+\cvsubitem{Since Apr'16}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.75\columnwidth}
+\begin{center}
+\cvsubitem{India Meteorological Department (IMD), Pune}\\
+\textbf{(Junior Research Fellow)}  
+\end{center}
+\end{minipage}
+
+\Sep
+\begin{minipage}[t]{0.25\columnwidth}
+% synop decoder
+\textbf{(Project-1)}\\
+\textbf{Technologies}\\
+\textbf{Role}\\
+\textbf{Description}
+
+\vspace{24mm}
+
+% MAWS
+\textbf{(Project-2)}\\
+\textbf{Technologies}\\
+\textbf{Role}\\
+\textbf{Description}
+
+\vspace{19.2 mm}
+
+% GRIB2Reader
+\textbf{(Project-3)}\\
+\textbf{Technologies}\\
+\textbf{Role}\\
+\textbf{Description}\\
+
+\vspace{14.5 mm}
+
+\textbf{(Project-4)}\\
+\textbf{Technologies}\\
+\textbf{Role}\\
+\textbf{Description}\\
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.75\columnwidth}
+: \textbf{\textsc{SYNOP Decoder}}\\
+: Python, MySQL\\
+: I was responsible for development.\\
+: This decoder is decoding the Meteorological Global Telecommunication System (GTS) 
+Messages (in WMO standard) received from Reginal Telecommunication Hub (RTH)  
+server Pune. After decoding it convert to National Data Center (NDC) 80 bit Indian standard. \\
+
+: \textbf{\textsc{Mini Automatic Weather Station} (MAWS)}\\
+: Python, MySQL, Embedded, Web Server \\
+: I was responsible for Codding \& Designing.\\
+: It is low-cost weather station for increasing the meteorological data traffic. 
+The data logger has 8 Analog, 8 digital and 2 serial interfaces. 
+It has a Remote monitoring system with Hamachi Client. 
+Internet use for data traffic.\\
+
+: \textbf{\textsc{GRIB Reader}}\\
+: Python (\textit{pygrib, matplotlib, pygrib})\\
+: I was responsible for development.\\
+: GRIdded Binary (GRIB) is concise data format used in meteorology. 
+GRIB Reader is the utility to read that data with respect to Lat-Lon.
+It provides the facility of plotting, export in CSV, compares data, point value.
+\\
+
+: \textbf{\textsc{AMO Mailing Client}}\\
+: Python, SMTP\\
+: I was responsible for development.\\
+: It is supporting in centralising Drishti  System data from various Airports runways in India.
+
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%    NEW PAGE DELIMITER
+%    Place this block wherever you would like the content of your CV to go onto the next page
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+% \phantom{This text will be invisible}
+\userinformation % Print your information in the left column
+\framebreak % End of the first column
+
+
+
+\begin{minipage}[t]{0.25\columnwidth}
+\cvsubitem{Agu'15-Jul'16}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.75\columnwidth}
+\begin{center}
+\cvsubitem{Central Water and Power Research Station, Pune}\\
+\textbf{(Project Student)}
+\end{center}
+\end{minipage}
+\Sep
+
+\begin{minipage}[t]{0.25\columnwidth}
+\textbf{(Project)}\\
+\textbf{Technologies}\\
+\textbf{Role}\\
+\textbf{Description}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.75\columnwidth}
+: \textbf{\textsc{Dam \& Weather Parameters Monitoring System}}\\
+: IoT, Python, MySQL, Webserver\\
+: I was responsible for development.\\
+: Dam authority facing problems regarding the dam and weather parameters monitoring. 
+Manual data observation and transmission results in a considerable time lag between data observed in the field and decision making level so there may be a possibility of losing a real-time data. 
+This proposed scheme is used to solve those problems.
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%    Other Experince
+%----------------------------------------------------------------------------------------
+\Sep % Extra whitespace after the end of a major section
+\CVSection{\textsc{Other Experince}:}
+\begin{minipage}[t]{0.15\columnwidth}
+\textbf{Feb 2016}\\
+\\
+\textbf{Jul 2015} 
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.85\columnwidth}
+Resource person for Research Methodology (\LaTeX) Workshop in 
+Sinhgad Institue of Technology \& Science, Pune\\
+Conducted a workshop on \LaTeX \, at NPCOE, Gadchiroli.
+\end{minipage}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%    Publications
+%----------------------------------------------------------------------------------------
+\Sep % Extra whitespace after the end of a major section
+\CVSection{\textsc{Publications}:}
+
+\begin{itemize}
+ \renewcommand{\labelitemi}{\bluebullet}
+ \item \cvpub{Nikhil M. Dhandre, JKS Yadav, Dr. G. Krishnakumar}{Dec-2016}{Design \& Implementation of Mini Automatic Weather Station for
+Rural Areas in India}{National Symposium on Tropical Meteorology(TROPMET-2016)}, In Progress.
+\SmallSep
+ \item \cvpub{Nikhil M. Dhandre, P. D. Kamalasekaran, Pooja Pandey}{Oct-2016}{Dam Parameters Monitoring System}{$7^{th}$IEEE India International Conference on Power Electronics}, In Progress.
+\SmallSep 
+ \item \cvpub{Nikhil M. Dhandre, M. M. Jadhav}{Jun-2016}{Dam Data Collection \& Monitoring System}{International Journal of Science and Research}, Vol.5, Issue 6, pp.1787-1790.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%    ACADEMIC CREDENTIALS
+%----------------------------------------------------------------------------------------
+\Sep % Extra whitespace after the end of a major section
+\CVSection{\textsc{Academic Credentials}:}
+\begin{minipage}[t]{0.05\columnwidth}
+\textbf{2016}\\
+\\
+\textbf{2013}\\
+\textbf{2012}\\
+\\
+\textbf{2008}\\ 
+\\
+\textbf{2006}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.90\columnwidth}
+\textbf{M.E.} (\texttt{Communication Network}) from Pune University. Secured 8.33 CGPA with Distinction.\\
+\textbf{GATE} Qualified.\\
+\textbf{B.E.} (\texttt{Electronics Communication}) from Nagpur University. Secured 65.45 with First class.\\
+\textbf{H.S.C} (\texttt{Electronics}) from Maharashtra State Board. Secured 73.83\% with First class.\\
+\textbf{S.S.C} from Maharashtra State Board. Secured 76.80\% with Distinction.
+\end{minipage} \\
+
+
+%----------------------------------------------------------------------------------------
+%    Declaration
+%----------------------------------------------------------------------------------------
+
+\vspace{1cm}
+I hereby declare that all the information given in my resume is true to the best of my knowledge.
+\vspace{1cm}
+\begin{flushleft}
+\textbf{\small Date} \hspace{0.20cm}:\, \\
+\textbf{\small Place}\hspace{0.21cm}:\,    
+\end{flushleft}
+
+\begin{flushright}
+\textbf{(\small Nikhil M. Dhandre)} 
+\end{flushright}
+
+
+\end{document}
