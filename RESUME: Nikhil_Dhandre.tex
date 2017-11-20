@@ -2,7 +2,7 @@
 %    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[a4paper,11pt]{memoir} % Font and paper size
+\documentclass[a4paper,10pt]{memoir} % Font and paper size
 
 \input{structure.tex} % Include the file specifying document layout and packages
 
@@ -15,7 +15,7 @@
 \textbf{Nikhil M. Dhandre} \\ % Your name
 \url{nik.digitronik@live.com} \\ % Your email address
 \url{www.digitronik.in} \\ % Your URL
-\url{github.com/digitronik}\\ % Your git
+\url{www.github.com/digitronik}\\ % Your git
 \texttt{+91-9096919955} \\ % Your phone number
 \Sep % Some whitespace
 \textbf{Date of Birth} \\
@@ -79,6 +79,7 @@ contribute to the growth of the organisation.}
 %------------------------------------------------
 \begin{minipage}[t]{0.20\columnwidth}
 \cvsubitem{Languages} \\
+\cvsubitem{Frameworks} \\
 \cvsubitem{Databases} \\
 \cvsubitem{Servers} \\
 \cvsubitem{OS}\\
@@ -91,6 +92,7 @@ contribute to the growth of the organisation.}
 \hfill
 \begin{minipage}[t]{0.80\columnwidth}
 : Python, C, Shell, \LaTeX, HTML, PL/SQL, PHP (\textit{basic})\\
+: Pytest, Navmazing, Widgetastic, Wrapanapi\\ 
 : MySQL, PostgreSQL, SQLite \\ 
 : LAMP (\textit{Apache}), FTP, Mailing \\
 : Linux, Windows\\
@@ -112,7 +114,7 @@ Express PCB, Photoshop, Altium (\textit{just start}) etc.\\
 % IMD 20 Apr 2016 - 19 Jun 2017 > 1yr 2 month
 %----------------------------------------------------------------------------------------
 \Sep % Extra whitespace after the end of a major section
-
+\Sep
 \CVSection{\textsc{Organisational Scan}:}
 
 \begin{minipage}[t]{0.20\columnwidth}
@@ -131,19 +133,29 @@ Express PCB, Photoshop, Altium (\textit{just start}) etc.\\
 \textbf{Team}\\
 \textbf{Technologies}\\
 \textbf{Role}\\
+\textbf{Repository}\\
 \textbf{Description}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.80\columnwidth}
 : \textbf{\textsc{Cloud Forms Management Engine (CFME) QE}}\\
-: Cloud\\
+: Python, Pytest, Widgetastic, Navmazing, Wrapanapi\\
 : I am responsible for Quality Engineering.\\
-: Responsible for focus areas(Storage, Provider Discovery, Capacity and Utilization) and automation.
+: \url{https://github.com/ManageIQ/integration_tests}\\
+: \begin{itemize}
+\item Responsible for focus areas(Storage, Provider Discovery, Capacity, and Utilization) 
+\item Added Model pages for Storage in the framework
+\item Automate new test cases as well as fixed 
+\item Contributed in core Widgetastic framework 
+\item Enhanced the test coverage for Capacity and Utilization
+\item Maintain Polarion test cases
+\item Added Mojo Page for cfme storage feature 
+  \end{itemize}
+
 \end{minipage}
 
 \Sep
-
-
+\Sep
 \begin{minipage}[t]{0.20\columnwidth}
 \cvsubitem{Apr'16-Jun'17}
 \end{minipage}
@@ -161,9 +173,10 @@ Express PCB, Photoshop, Altium (\textit{just start}) etc.\\
 \textbf{(Project-1)}\\
 \textbf{Technologies}\\
 \textbf{Role}\\
+\textbf{Repository}\\
 \textbf{Description}
 
-\vspace{19.3mm}
+\vspace{13mm}
 
 % MAWS
 \textbf{(Project-2)}\\
@@ -171,19 +184,13 @@ Express PCB, Photoshop, Altium (\textit{just start}) etc.\\
 \textbf{Role}\\
 \textbf{Description}
 
-\vspace{9.5 mm}
+\vspace{8.1 mm}
 
 % GRIB2Reader
 \textbf{(Project-3)}\\
 \textbf{Technologies}\\
 \textbf{Role}\\
-\textbf{Description}\\
-
-\vspace{10.5 mm}
-
-\textbf{(Project-4)}\\
-\textbf{Technologies}\\
-\textbf{Role}\\
+\textbf{Repository}\\
 \textbf{Description}\\
 
 \end{minipage}
@@ -192,6 +199,7 @@ Express PCB, Photoshop, Altium (\textit{just start}) etc.\\
 : \textbf{\textsc{SYNOP Decoder}}\\
 : Python, MySQL\\
 : I was responsible for development.\\
+: \url{https://github.com/digitronik/synop-decoder}\\
 : This decoder is decoding the Meteorological Global Telecommunication System (GTS) 
 Messages (in WMO standard) received from RTH server Pune to National Data Center (NDC) 80 bit Indian standard. \\
 
@@ -204,13 +212,8 @@ It has a Data Logger and Remote monitoring system.\\
 : \textbf{\textsc{GRIB Reader}}\\
 : Python (\textit{pygrib, matplotlib, pygrib})\\
 : I was responsible for development.\\
+: \url{https://github.com/digitronik/grib}\\
 : GRIB Reader is the utility to read that GRIdded Binary (GRIB) data with respect to Lat-Lon and plotting, export in CSV, compares data, point value.\\
-
-: \textbf{\textsc{AMO Mailing Client}}\\
-: Python, SMTP\\
-: I was responsible for development.\\
-: It is supporting in centralising Drishti System data from various Airports runways in India.
-
 \end{minipage}
 
 
@@ -224,8 +227,22 @@ It has a Data Logger and Remote monitoring system.\\
 \userinformation % Print your information in the left column
 \framebreak % End of the first column
 
+\begin{minipage}[t]{0.20\columnwidth}
+\textbf{(Project-4)}\\
+\textbf{Technologies}\\
+\textbf{Role}\\
+\textbf{Description}\\
+\end{minipage}
+\begin{minipage}[t]{0.80\columnwidth}
+: \textbf{\textsc{AMO Mailing Client}}\\
+: Python, SMTP\\
+: I was responsible for development.\\
+: It is supporting in centralising Drishti System data from various Airports runways in India.
+\end{minipage}
 
 
+\Sep
+\Sep
 \begin{minipage}[t]{0.20\columnwidth}
 \cvsubitem{Agu'15-Jul'16}
 \end{minipage}
@@ -249,8 +266,7 @@ It has a Data Logger and Remote monitoring system.\\
 : \textbf{\textsc{Dam \& Weather Parameters Monitoring System}}\\
 : IoT, Python, MySQL, Webserver\\
 : I was responsible for development.\\
-: Dam authority facing problems regarding the dam and weather parameters monitoring. 
-Manual data observation and transmission results in a considerable time lag between data observed in the field and decision making level so there may be a possibility of losing a real-time data. 
+: Dam authority facing problems like Manual data observation and transmission results in a considerable time lag between data observed in the field and decision making level so there may be a possibility of losing a real-time data. 
 This proposed scheme is used to solve those problems.
 \end{minipage}
 
@@ -259,7 +275,8 @@ This proposed scheme is used to solve those problems.
 %    Other Experince
 %----------------------------------------------------------------------------------------
 \Sep % Extra whitespace after the end of a major section
-\CVSection{\textsc{Other Experince}:}
+\Sep
+\CVSection{\textsc{Other Contributions}:}
 \begin{minipage}[t]{0.15\columnwidth}
 \textbf{Oct 2017}\\
 \\
@@ -283,6 +300,7 @@ Conducted a workshop on \LaTeX \, at NPCOE, Gadchiroli.
 %    Publications
 %----------------------------------------------------------------------------------------
 \Sep % Extra whitespace after the end of a major section
+\Sep
 \CVSection{\textsc{Publications}:}
 
 \begin{itemize}
@@ -336,6 +354,5 @@ I hereby declare that all the information given in my resume is true to the best
 \begin{flushright}
 \textbf{(\small Nikhil M. Dhandre)} 
 \end{flushright}
-
 
 \end{document}
